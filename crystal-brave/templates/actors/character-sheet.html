@@ -1,0 +1,46 @@
+
+<form class="sheet crystal-brave-sheet" autocomplete="off">
+  <header class="sheet-header">
+    <h1>
+      <input name="name" type="text" value="{{actor.name}}" placeholder="Character Name"/>
+    </h1>
+    <div class="flexrow">
+      <label>Level:</label>
+      <input type="number" name="data.level" value="{{data.data.level}}" />
+    </div>
+    <div class="flexrow">
+      <label>Main Job:</label>
+      <span>{{data.data.mainJob.name}}</span>
+    </div>
+  </header>
+
+  <section class="sheet-body">
+    <div class="section stats">
+      <h2>Core Stats</h2>
+      <div class="grid stats-grid">
+        {{#each data.data.stats as |stat key|}}
+        <div class="stat-block">
+          <label>{{key}}</label>
+          <input type="number" name="data.stats.{{key}}" value="{{stat}}" />
+        </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="section talents">
+      <h2>Talents</h2>
+      <div class="grid talents-grid">
+        {{#each data.data.talents as |rank key|}}
+        <div class="talent-block">
+          <label>{{key}}</label>
+          <select name="data.talents.{{key}}">
+            {{#each ../config.proficiencyRanks}}
+              <option value="{{@key}}" {{#ifEquals @key rank}}selected{{/ifEquals}}>{{this}}</option>
+            {{/each}}
+          </select>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+</form>

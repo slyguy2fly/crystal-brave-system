@@ -1,0 +1,27 @@
+{
+  "actor": {
+    "type": "character",
+    "name": "New Hero",
+    "data": {
+      "stats": {
+        "strength": 10,
+        "agility": 10,
+        "vitality": 10,
+        "intelligence": 10,
+        "spirit": 10,
+        "aura": 10
+      },
+      "level": 1,
+      "talents": {
+        "brawn": "B",
+        "knack": "B",
+        "tenacity": "B",
+        "wisdom": "B",
+        "intuition": "B",
+        "appeal": "B"
+      },
+      "jobs": [],
+      "mainJob": null
+    }
+  }
+}

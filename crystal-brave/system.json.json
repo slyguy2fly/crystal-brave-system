@@ -1,0 +1,26 @@
+{
+  "name": "crystal-brave-system",
+  "title": "Crystal Brave System",
+  "version": "0.1.0",
+  "author": "Your Name",
+  "esmodules": [
+    "module/main.js"
+  ],
+  "styles": [
+    "styles/style.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "system": {
+    "id": "crystal-brave-system",
+    "version": "0.1.0",
+    "schema": 1
+  },
+  "manifest": "systems/crystal-brave-system/system.json",
+  "packs": []
+}
