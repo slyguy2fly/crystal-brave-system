@@ -1,26 +1,29 @@
 {
-  "name": "crystal-brave-system",
+  "name": "crystal-brave",
   "title": "Crystal Brave System",
+  "description": "A custom TTRPG system for Foundry VTT.",
   "version": "0.1.0",
   "author": "Your Name",
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "10",
+  "scripts": [
+    "job-sheet.js",
+    "system.js"
+  ],
   "esmodules": [
-    "module/main.js"
+    "job-sheet.js",
+    "system.js"
   ],
   "styles": [
-    "styles/style.css"
+    "styles.css"
   ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    }
-  ],
+  "packs": [],
   "system": {
-    "id": "crystal-brave-system",
-    "version": "0.1.0",
-    "schema": 1
+    "actors": [],
+    "items": ["job", "ability", "weapon", "armor", "accessory", "item"],
+    "macros": []
   },
-  "manifest": "systems/crystal-brave-system/system.json",
-  "packs": []
-}
+  "languages": [],
+  "url": "",
+  "manifest": "",
+  "download": ""
